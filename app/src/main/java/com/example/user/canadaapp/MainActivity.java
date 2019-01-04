@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 
+
 /**
  * Cette classe construit l'interface qui
  * présente la liste des Provinces et térritoires
@@ -34,6 +35,7 @@ public class MainActivity extends Activity {
     };
     // tableau des drapeau de province
     int[] drapeauxProvinces = {
+
             R.drawable.alberta,
             R.drawable.british_colombia,
             R.drawable.ile_prince_edward,

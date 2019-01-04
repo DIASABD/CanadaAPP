@@ -54,70 +54,70 @@ public class Options extends AppCompatActivity {
 
             case 0:
                 getSupportActionBar().setTitle("Alberta");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 1:
                 getSupportActionBar().setTitle("Colombie Britannique");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 2:
                 getSupportActionBar().setTitle("Ile du Prince Edouard");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
 
             case 3:
                 getSupportActionBar().setTitle("Manitoba");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 4:
                 getSupportActionBar().setTitle("Nouvelle Ecosse");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
 
             case 5:
                 getSupportActionBar().setTitle("Nouveau Brunswick");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 6:
                 getSupportActionBar().setTitle("Nunavut");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 7:
                 getSupportActionBar().setTitle("Ontario");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 8:
                 getSupportActionBar().setTitle("Québec");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 9:
                 getSupportActionBar().setTitle("Saskachewan");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 10:
                 getSupportActionBar().setTitle("Terre Neuve et Labrardor");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
             case 11:
                 getSupportActionBar().setTitle("Territoires du Nord Ouest");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
 
             case 12:
                 getSupportActionBar().setTitle("Yukon");
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorRed)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
 
         }
@@ -125,7 +125,7 @@ public class Options extends AppCompatActivity {
 
         setContentView(R.layout.activity_options);
         listViewProvinces = (ListView) findViewById(R.id.option_list);
-        ListProvinces listProvinces = new ListProvinces(Options.this, mesOptions,
+        Provinces listProvinces = new Provinces(Options.this, mesOptions,
                 icones);
         listViewProvinces.setAdapter(listProvinces);
 
@@ -144,12 +144,12 @@ public class Options extends AppCompatActivity {
                         startActivity(intent2);
                         break;
                     case (2):
-                        Intent intent3 = new Intent(getApplicationContext(), Meteo.class);
-                        startActivity(intent3);
+                       // Intent intent3 = new Intent(getApplicationContext(), Meteo.class);
+                        //startActivity(intent3);
                         break;
                     case (3):
-                        Intent intent5 = new Intent(getApplicationContext(), Carte.class);
-                        startActivity(intent5);
+                       // Intent intent5 = new Intent(getApplicationContext(), Carte.class);
+                        //startActivity(intent5);
                         break;
                     case (4):
                         Intent intent6 = new Intent(getApplicationContext(), Taxe.class);

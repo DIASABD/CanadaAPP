@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -80,10 +79,7 @@ public class ListActuAdapter extends BaseAdapter {
             if (song.get(Actualite.KEY_URLTOIMAGE).toString().length() < 5) {
                 holder.galleryImage.setVisibility(View.GONE);
             } else {
-                Picasso.with(activite)
-                        .load(song.get(Actualite.KEY_URLTOIMAGE).toString())
-                        .resize(300, 200)
-                        .into(holder.galleryImage);
+
             }
         } catch (Exception e) {
         }
@@ -148,8 +144,7 @@ public class ListActuAdapter extends BaseAdapter {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
             ListView listViewProvinces = (ListView) findViewById(R.id.listewiew_main);
-            Provinces listProvinces = new Provinces(com.example.user.canadaapp.MainActivity.this, nomProvinces, drapeauxProvinces);
-            listViewProvinces.setAdapter(listProvinces);
+
             listViewProvinces.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
