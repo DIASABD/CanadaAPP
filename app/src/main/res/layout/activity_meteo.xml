@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meteoback"
+    tools:context="com.example.user.canadaapp.Meteo">
+
+
+    <TextView
+        android:id="@+id/textView_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:text="Date"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_Date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="77dp"
+        android:text="My city"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageMeteo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/textView_City"
+        android:layout_alignTop="@+id/textView_Celsius"
+        android:layout_marginTop="6dp"
+        app:srcCompat="@drawable/sunn" />
+
+    <TextView
+        android:id="@+id/textView_province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_Date"
+        android:layout_below="@+id/textView_Date"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="44dp"
+        android:text="30"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="80dp" />
+
+    <TextView
+        android:id="@+id/textView_Celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_province"
+        android:layout_toEndOf="@+id/textView_province"
+        android:text="C"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView_Description"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/textView_province"
+        android:layout_below="@+id/imageMeteo"
+        android:layout_marginTop="56dp"
+        android:text="Soleil"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+</RelativeLayout>

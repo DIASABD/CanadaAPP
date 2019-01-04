@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.canadaapp.Taxe">
+
+
+    <TextView
+        android:id="@+id/textView_taxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Taxes"
+        android:textColor="#ffffff"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/editText_taxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_montant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView_montant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Entrez un montant"
+        android:textColor="#000000"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/boutton_taxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_taxe"
+        android:layout_below="@+id/editText_taxe"
+        android:layout_marginTop="29dp"
+        android:text="Calculer"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/total_taxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boutton_taxe"
+        android:layout_marginTop="54dp"
+        android:layout_toStartOf="@+id/boutton_taxe"
+        android:text="Taux de taxe:"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/result_taxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/total_taxe"
+        android:layout_alignBottom="@+id/total_taxe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@+id/total_taxe"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/total_payer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/total_taxe"
+        android:layout_below="@+id/total_taxe"
+        android:layout_marginTop="20dp"
+        android:text="Total à payer:"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/resultat_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/total_payer"
+        android:layout_alignBottom="@+id/total_payer"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@+id/total_payer"
+        android:text="0$"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
